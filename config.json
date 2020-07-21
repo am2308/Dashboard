@@ -1,0 +1,33 @@
+{
+ "agent": {
+  "run_as_user": "root"
+  "debug"      : "true"
+ },
+ "logs": {
+  "logs_collected": {
+   "files": {
+    "collect_list": [
+     {
+      "file_path": "/var/log/httpd/error_log",
+      "log_group_name": "error_log",
+      "log_stream_name": "{instance_id}"
+     },
+     {
+      "file_path": "/var/log/httpd/access_log",
+      "log_group_name": "access_log",
+      "log_stream_name": "{instance_id}"
+     }
+    ]
+   }
+  }
+ },
+ "metrics": {
+  "metrics_collected": {
+   "statsd": {
+    "metrics_aggregation_interval": 60,
+    "metrics_collection_interval": 10,
+    "service_address": "8125"
+   }
+  }
+ }
+}
