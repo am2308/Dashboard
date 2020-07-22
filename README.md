@@ -28,10 +28,12 @@ Infrastructure Provisioning Tool - Terraform
 ## Outcome
 * [Grafana] (http://grafana-724446699.us-east-1.elb.amazonaws.com/). There would be 3 dashboard in dashboard sections with name ApacheServerLogsView, EC2ServerMonitoring, ServerMonitoring.
 * [Cloudwatch] for apache logs level view.
+* Slack Notification
 
 ## Future Scope
 * As part of Iac(Infrastructure as Code), we can run [UserData] script in userdata section of ec2 instance whenever we are going to provision. This will help in enabling the automatic monitoring of underlying infrastructure.
-* We can set alerting mechinism in Grafana itself to notify team. Slack/Email/PagerDuty/MicroSoft Teams are the examples that we can use for notification
+* We can add this as part of release management.
+* We can set more alerting mechinism in Grafana itself to notify team. Slack/Email/PagerDuty/MicroSoft Teams are the examples that we can use for notification
 
 
 
