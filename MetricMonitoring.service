@@ -1,0 +1,15 @@
+[Unit]
+Description=Python service to pull and push metrics data
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /root/MetricsCollection.py 2> /root/MetricsCollection.log
+#StandardInput=tty-force
+StartLimitBurst=3
+StartLimitInterval=60s
+RestartSec=10
+Restart=Always
+
+[Install]
+WantedBy=multi-user.target
