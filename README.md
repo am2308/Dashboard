@@ -1,4 +1,4 @@
-# Dashboard View
+# Dashboard View(Open Source)
 This utility will run as a python agent to monitor service level logs along with some custom metrics. Also this will help in showcasing the same on Grafana Dashboard.
 
 ## Tool Stack
