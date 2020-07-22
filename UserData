@@ -1,0 +1,9 @@
+#!/bin/bash
+cd /<user>
+git clone https://github.com/am2308/Dashboard.git
+mkdir /<user/Scripts
+cp -R /<user>/Dashboard /<user>/Scripts/
+cp /<user>/Scripts/MetricMonitoring.service /etc/systemd/system/MetricMonitoring.service
+systemctl daemon-reload
+systemctl start MetricMonitoring.service
+systemctl status MetricMonitoring.service
