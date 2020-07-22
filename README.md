@@ -32,7 +32,7 @@ Infrastructure Provisioning Tool - Terraform
 
 ## Future Scope
 * As part of Iac(Infrastructure as Code), we can run [UserData] script in userdata section of ec2 instance whenever we are going to provision. This will help in enabling the automatic monitoring of underlying infrastructure.
-* We can add this as part of release management.
+* We can add this as part of release management using CICD.
 * We can set more alerting mechinism in Grafana itself to notify team. Slack/Email/PagerDuty/MicroSoft Teams are the examples that we can use for notification
 
 
